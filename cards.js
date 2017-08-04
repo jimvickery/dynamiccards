@@ -30,11 +30,11 @@ deleteBlogsEl.addEventListener("click", function(){
 
 });
 
-function deleteBlogs (a) {
+function deleteBlogs (event) {
     let parentBlog = a.parentNode;
 }
 
-function changeColor(a) {
+function changeColor(event) {
     let parentBlog = a.parentNode;
     let childDiv = parent.getElementsByTagName('input') [0];
     let colors = childDiv.value;
@@ -44,7 +44,7 @@ function changeColor(a) {
 }
 
 
-function changeFont(a) {
+function changeFont(event) {
     let parent = a.parentNode;
     let childDiv = parent.getElementsByTagName('input')[1];
     let colors = childDiv.value;
@@ -55,13 +55,19 @@ function changeFont(a) {
 
 
 
+//treehouse Practice code============/////
 
 
+var contact = {
+     firstName : "Andrew",
+     lastName : "Chalkley",
+  fullName: function() {
+   
+    console.log(this.firstName + " " + this.lastName);
+  }
+}
 
-
-
-
-
+//treehouse Practice code============/////
 
 
 
